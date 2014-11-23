@@ -66,6 +66,7 @@ run_analysis <- function() {
 
 	# replace the activity indices with descriptive factors (maintain the original order)
 	activityLabels <- read.table("activity_labels.txt")
+	measurementMeans$Subject  <- as.factor(measurementMeans$Subject)
 	measurementMeans$Activity <- factor(measurementMeans$Activity, labels=activityLabels[,2])
 
 	# Remove the unnecessary Group "by" variables added by the aggregate function.
