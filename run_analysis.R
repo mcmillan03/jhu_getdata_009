@@ -36,10 +36,10 @@ run_analysis <- function() {
 	# One could add more indicies here to add the "*Means" features if needed.
 	fieldIndices = c(
 		1:6,      # tBodyAcc X,Y,Z
-            41:46,    # tGravityAcc X,Y,Z
+		41:46,    # tGravityAcc X,Y,Z
 		81:86,    # tBodyAccJerk X,Y,Z
 		121:126,  # tBodyGyro X,Y,Z
-            161:166,  # tBodyGyroJerk X,Y,Z
+		161:166,  # tBodyGyroJerk X,Y,Z
 		201,202,  # tBodyAccMag
 		214,215,  # tGravityAccMag
 		227,228,  # tBodyAccJerkMag
